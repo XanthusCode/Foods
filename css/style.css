@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*================= RESET ==================*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*================= ROOT ==================*/
+:root{
+    --text-color: #ff702a;
+    --body: #1e1d2b;
+    --fondo: #ffefe8;
+}
+
+body{
+    background-color: var(--body) ;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+
+/* =============== NAVBAR ================*/
+header {
+    height: 100px;
+    padding: 0 50px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h4 {
+    color: var(--text-color);
+    font-size: 40px;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 15px;
+    transition: background-color 0.3s ease;
+}
+
+.mostrar-menu{
+    order: 1;
+}
+
+.mostrar-menu,
+.esconder-menu{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s;
+
+}
+
+#check{
+    display: none;
+}
+
+.esconder-menu i:hover,
+.mostrar-menu i:hover{
+    color: cadetblue;
+}
+.navbar-menu a:hover {
+    transform: scale(1.1);
+    color: cadetblue;
+    transition: 0.2s ease-in-out;
+    border: 1px solid green;
+}
+
+/* .navbar a.active{
+    border: 1px solid green;
+    padding: 10px  8px 0 ;
+} */
+
+
+
+/* =============== HOME ================*/
+.home h1{
+    color: var(--text-color);
+    font-size: 80px;
+}
+
+.home p{
+    color: white;
+    font-size: 30px;
+}
+
+.home img{
+    max-width: 350px;
+}
+
+.content button{
+    background-color: var(--text-color);
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    margin-top: 25px ;
+}
+.content button:hover{
+    transform: scale(1.04);
+    color: black;
+    background-color: cadetblue;
+    border-radius: 5px;
+}
+
+/* =============== ABOUT US ================*/
+.about h5{
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+.about h3{
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+.about p{
+    color: white;
+    font-size: 30px;
+}
+
+.about img{
+    max-width: 350px;
+}
+
+/* =============== MENU ================*/
+.text-menu{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.text-menu h5{
+    color: var(--text-color);
+    font-size: 30px;
+}
+.text-menu h3{
+    color: white;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+.menu .food1,
+.menu .food2,
+.menu .food3{
+    width:350px;
+    height: 412px;
+    background-color: var(--fondo);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.menu .food1:hover,
+.menu .food2:hover,
+.menu .food3:hover{
+  transform: scale(1.04);
+  transition: 0.2s ease-in-out;
+  border-radius: 5px;
+}
+
+.menu i{
+    background-color: var(--text-color);
+    padding: 7px;
+    color: white;
+    font-size: 20px;
+    align-self: end;
+}
+
+.menu img{
+    width: 80%;
+
+}
+
+.menu h5{
+    font-size: 22px;
+}
+
+.menu p{
+    font-size: 17px;
+
+}
+
+.menu span{
+    color: var(--text-color);
+}
+
+
+/* =============== SERVICES ================*/
+.services .service1 img,
+.services .service2 img,
+.services .service3 img{
+    width: 300px;
+}
+
+.services .service1:hover,
+.services .service2:hover,
+.services .service3:hover{
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+
+}
+
+.services .service1 h4,
+.services .service2 h4,
+.services .service3 h4{
+    color: var(--text-color);
+    text-align: center;
+}
+
+.services .service1 p,
+.services .service2 p,
+.services .service3 p{
+    color: white;
+    text-align: center;
+}
+
+
+/* =============== INFO ================*/
+.info{
+
+    flex-direction: column;
+    background-color: var(--fondo);
+    text-align: center;
+    margin: 50px;
+}
+
+.info p{
+    padding: 50px;
+    background-color: var(--fondo);
+    font-size: 40px;
+}
+
+.text button {
+    margin-bottom: 30px;
+}
+
+/* =============== FOOTER ================*/
+footer{
+    margin: 100px;
+    color: white;
+    display: grid;
+
+    grid-template-columns: repeat(4,2fr);
+
+}
+.footer-text{
+    padding-left: 15px;
+}
+
+.footer-text h3{
+    width: 30px;
+    max-width: 100px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid  #ff702a;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.footer-text a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.links i{
+    cursor: pointer;
+    background-color: #ff702a;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+
+/* ============== RESPONSIVE================= */
+@media (max-width: 768px){
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+    }
+    .navbar-menu{
+        position: fixed;
+        width: 100%;
+        height: 80vh;
+        background: #2c2b47;
+        right: -100%;
+        top: 7%;
+        text-align: center;
+        padding: 100px 150px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .navbar-menu a{
+        display: block;
+        padding: 20px ;
+    }
+
+    .navbar-menu a:hover {
+        color: cadetblue;
+        border: 1px solid green;
+        margin: 0;
+    }
+
+    .esconder-menu{
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+    #check:checked ~ .navbar-menu{
+        right: 0;
+    }
+
+    .home,
+    .about,
+    .menu,
+    .services{
+        display: grid;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .order-1{
+        order: 1;
+    }
+
+    footer{
+        grid-template-columns: 100%;
+    }
+
+    .footer-text{
+        padding: 1rem 0;
+    }
+
+    .footer-text .links{
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-text h3{
+        text-align: center;
+    }
+}
+
+@media (max-width: 390px){
+    img{
+        max-width: 300px;
+    }
+    body{
+        margin: 20px;
+    }
+
+    .content{
+        gap: 50px;
+    }
+    header{
+        padding: 10px;
+    }
+
+    header h4{
+        padding:  0 !important;
+        font-size: 30px;
+    }
+
+    .home h1{
+        font-size: 45px;
+    }
+    .home p{
+        font-size: 25px;
+    }
+
+    .content button{
+        background-color: var(--text-color);
+        padding: 5px;
+        font-size: 15px;
+        border: none;
+        color: white;
+        font-weight: bold;
+        transition: 0.2s ease-in-out;
+        margin-top: 25px ;
+    }
+
+    .about h5{
+        font-size: 45px;
+        margin: 10px;
+    }
+    .about h3{
+        margin-top: 2px;
+        font-size: 20px;
+    }
+
+    .about p{
+        font-size: 15px;
+    }
+
+    .text-menu h5{
+        font-size: 45px;
+    }
+    .text-menu h3{
+        margin-top: 2px;
+        font-size: 20px;
+    }
+
+    .menu .food1,
+    .menu .food2,
+    .menu .food3{
+        width:250px;
+        height: 318px;
+        background-color: var(--fondo);
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .services .service1 img,
+    .services .service2 img,
+    .services .service3 img{
+        max-width: 180px;
+    }
+
+    .info{
+        margin: 25px;
+    }
+
+    .info p{
+        font-size: 30px;
+    }
+
+}
